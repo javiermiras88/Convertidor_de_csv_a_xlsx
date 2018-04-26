@@ -4,7 +4,7 @@ $csv = "C:\Users\ortiga\Desktop\table.csv" #archivo origen
 $xlsx = "C:\Users\ortiga\Desktop\table2.xlsx" #archivo destino
 $delimitador = "," #especificamos el delimitador
 
-# creamos una nueva hoja vacia y la seleccionamos
+# creamos una nueva hoja vacia y la seleccionamos el objeto con el que vamos a trabajar
 $excel = New-Object -ComObject excel.application 
 $documento = $excel.Workbooks.Add(1)
 $hoja = $documento.worksheets.Item(1)
